@@ -1,0 +1,10 @@
+.tables{
+    width: 80%;
+    margin: 30px auto;
+}
+table, th, td{
+    border: 1px solid black;
+}
+td{
+    width: 35%;
+}
