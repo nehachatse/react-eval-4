@@ -48,6 +48,16 @@ export default function AdminView(){
                 })
                 .catch(err => console.log(err))
     }
+    const sortDes = async() => {
+        await axios.get("http://localhost:3000/reimbursement/_sort=date&_order=desc")
+        .then(res => setClaims(res.data))
+        .catch(err => console.log(err))
+    }
+    const sortAsc = async () => {
+        await axios.get("http://localhost:3000/reimbursement/_sort=date&_order=asc")
+        .then(res => setClaims(res.data))
+        .catch(err => console.log(err))
+    }
     React.useEffect(() => {
         getClaims();
     }, [])
@@ -57,6 +67,10 @@ export default function AdminView(){
                 <button onClick={() => setIsAuth(false)}>LOGOUT</button>
             </Navbar>
             <div className={styles.tables}>
+                <div className={styles.sort}>
+                    <div>Sort By:<button onClick={sortDes}>Latest Date</button>
+                    <button onClick={sortAsc}>Oldest Date</button></div>
+                </div>
             <table>
                 <thead>
                     <th>Name</th>

@@ -1,3 +1,20 @@
+.sort{
+    margin-bottom: 1rem;
+    padding: 1rem;
+    color: orange;
+}
+.sort button {
+    margin-left: 1rem;
+    padding: .65rem;
+    background-color: orange;
+    border: 1px solid orange;
+    color: white;
+}
+.sort button:hover{
+    background-color: white;
+    color: orange;
+  
+}
 .tables{
     width: 80%;
     margin: 30px auto;
