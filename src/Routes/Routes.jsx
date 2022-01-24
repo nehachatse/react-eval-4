@@ -17,6 +17,9 @@ export default function Routes(){
             <Route path="/login">
                 <AdminLogin/>
             </Route>
+            <Route>
+                Page not found 404!!!
+            </Route>
             
         </Switch>
         

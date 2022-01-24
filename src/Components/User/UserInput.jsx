@@ -16,6 +16,7 @@ export default function UserInput({onAdd}){
     console.log("Input")
     return (
         <div style={{width:"60%", margin:"30px auto", justifyContent:"center"}}>
+            <h1 style={{textAlign:"center"}}>Create New Claims</h1>
         <form>
             <div className={styles.formDiv}>
                 <div><input type="text" placeholder="Enter your name" value={userName} onChange={(e) => setName(e.target.value)} required/></div>

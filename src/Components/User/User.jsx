@@ -41,6 +41,7 @@ export default function User(){
         <>
             <UserInput onAdd={handleSubmit}/>
             <div className={styles.tables}>
+                <h1 style={{textAlign:"center"}}>Your Claims</h1>
             <table>
                 <thead>
                     <th>Name</th>

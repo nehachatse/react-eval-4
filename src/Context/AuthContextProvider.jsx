@@ -9,9 +9,12 @@ export const AuthContextProvider = ({children}) => {
         if(userName == "admin" && pass == "admin"){
             setIsAuth(!isAuth);
         }
+        else{
+            alert("Invalid User!!!")
+        }
     }
 
-    const value = {isAuth, handleIsAuth};
+    const value = {isAuth, handleIsAuth, setIsAuth};
 
     return (
         <AuthContext.Provider value={value}>{children}</AuthContext.Provider>
