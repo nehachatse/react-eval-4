@@ -25,7 +25,7 @@ export default function User(){
             date: Date.now(),
             reason: userReason,
             amount: userAmount,
-            status: false
+            status: "pending"
         }
         await axios.post("http://localhost:3000/reimbursement", data)
         .then(res => getData())

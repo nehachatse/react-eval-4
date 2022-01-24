@@ -63,10 +63,6 @@ export default function UserData({data}){
     //     </div>
     // )
 
-    return (
-        <div>
-            <h3>{data.name}</h3>
-        </div>
-    )
+
 
 }
